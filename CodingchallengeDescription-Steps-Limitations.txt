@@ -10,7 +10,7 @@ Working Solution Steps:
 4.The received data is processed in the wiredContacts method. If there's data, it's stored and processed further.
 5.The pagination is handled by the previousHandler and nextHandler methods, which adjust the page number and then call the displayRecordPerPage method to update the displayed records.
 6.The template uses if:true and if:false directives to control the visibility of the "No contacts available" message and the Datatable.
-7.The Lightning Datatable component is used to display contact records
+7.The Lightning Datatable component is used to display contact records.
 8.The Lighthing application named "FyndCodingChallengeApplication" is created to add the component.
 
 Limitations/Risks or Edge Cases:
