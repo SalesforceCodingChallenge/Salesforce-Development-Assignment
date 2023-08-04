@@ -1,0 +1,20 @@
+Short Description of Approach:
+
+The approach involves creating an LWC named "ContactList" that retrieves contacts(FirstName, LastName, Email) from an Apex controller "ContactController" and from method "ContactController.getContacts" using the @wire decorator. The contacts are displayed in a paginated manner using a Lightning Datatable, and the pagination is handled by adjusting the page number and displaying the appropriate subset of contacts based on the page number.
+
+Working Solution Steps:
+
+1.The LWC (Lightning Web Component) is created and named "ContactList".
+2.The component template contains a Lightning Card with the title "List of Contacts".
+3.The data retrieval is done using the @wire decorator to call the getContacts method from the Apex class.
+4.The received data is processed in the wiredContacts method. If there's data, it's stored and processed further.
+5.The pagination is handled by the previousHandler and nextHandler methods, which adjust the page number and then call the displayRecordPerPage method to update the displayed records.
+6.The template uses if:true and if:false directives to control the visibility of the "No contacts available" message and the Datatable.
+7.The Lightning Datatable component is used to display contact records
+8.The Lighthing application named "FyndCodingChallengeApplication" is created to add the component.
+
+Limitations/Risks or Edge Cases:
+
+1.Data Limitation: The current implementation retrieves a maximum of 2000 contacts from the database. If there are more than 2000 contacts, only the first 2000 will be displayed.
+
+2.If contacts are added or removed from the database while a user is on a specific page, the displayed records might not accurately represent the current state of the database.

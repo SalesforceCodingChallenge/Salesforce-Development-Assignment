@@ -1,0 +1,25 @@
+Salesforce Development Assignment
+Please complete the task below. Please send us a zip file or a link (e.g. GitHub)
+containing a working solution and a short description on how to get the
+desired result.
+Task:
+Create a Lightning web component that uses @wire in an Apex controller to
+retrieve contact records. Display the contact records in a lightning-datatable.
+1.1: Create an Apex controller that retrieves a list of contacts:
+
+● Class: ContactController
+● Method: getContacts()
+● Fields to query: FirstName, LastName, Email
+
+1.2 : Create a Lightning web component that displays contacts in a table:
+
+● Component name: contactList
+● Base component: lightning-datatable
+● Fields to include: FirstName, LastName, Email
+
+1.3: Wire the getContacts() method
+1.4: Add the component to a new App page
+
+Enjoy the challenge, we are looking forward to seeing your ideas and results! Good
+luck and, if you have any questions, feel free to get in touch at:
+recruiting@ufynd.com
